@@ -1,16 +1,9 @@
-# This is a sample Python script.
-
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
-
+import service
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    # service.get_weibo_time_num_bar_html()
+    # service.get_weibo_attitude_num_pie_html()
+    print(list(service.get_weibo_news_by_month('2020-06')))
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
